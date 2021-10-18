@@ -24,6 +24,7 @@ body{
 	height:50vh;
 	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
@@ -82,9 +83,10 @@ body{
 .toast{
 	--color: black;
 	width: 450px;
+	max-width: 100%;
 	display: flex;
 	align-items: center;
-	background-color: rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.9);
 	padding: 1.5rem 0rem;
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.09),
 	1px 2px 10px rgba(0, 0, 0, 0.08);
@@ -153,5 +155,21 @@ body{
 	100%{
 		opacity: 0;
 		display: none;
+	}
+}
+
+@media (max-width: calc(740em/16)) {
+	.btn{
+		box-sizing: border-box;
+		min-width: 50%;
+	}
+	
+	#toasts{
+		top: 0;
+		right: 0;
+		left: 0;
+	}
+	.toast + .toast{
+		margin-top: 0;
 	}
 }
