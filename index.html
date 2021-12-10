@@ -12,36 +12,59 @@
 	<!-- link css -->
 	<link rel="stylesheet" href="main.css">
 	<!-- font awesome -->
-	<script src="https://kit.fontawesome.com/8e4cef6edf.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./Font/css/all.min.css">
    <title>Document</title>
+	<style>
+		
+	</style>
 </head>
 <body>
-	<div class="buttons">
-		<button class="btn btn--success btn--sm">GO TO NEXT APPROVAL</button>
-		<button class="btn btn--info btn--sm">Info button</button>
-		<button class="btn btn--warning btn--sm">OK</button>
-		<button class="btn btn--danger btn--sm">TRY AGAIN</button>
+	<div class="container">
+		<ul class="tabs">
+			<li class="tab-item active">
+				<i class="fa-solid fa-code"></i>
+				<span>React</span>
+			</li>
+			<li class="tab-item">
+				<i class="fa-solid fa-gear"></i>
+				<span>Angular</span>
+			</li>
+			<li class="tab-item">
+				<i class="fa-light fa-circle-plus"></i>
+				<span>Ember</span>
+			</li>
+			<li class="tab-item">
+				<i class="fa-solid fa-pen-nib fa-flip-vertical"></i>
+				<span>Design</span>
+			</li>
+			<li class="line"></li>
+		</ul>
+		<ul class="tab-contents">
+			<li class="tab-content active">
+				<h2>React</h2>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi amet autem asperiores reprehenderit iure, beatae perspiciatis consectetur numquam doloribus excepturi quia alias fuga sapiente quidem corrupti harum rem, assumenda consequuntur.</p>
+			</li>
+			<li class="tab-content">
+				<h2>Angular</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam accusantium voluptates, quae vitae minima voluptatem totam! Error odio sed excepturi, eveniet vitae tenetur adipisci, beatae laborum deleniti tempore eum delectus.</p>
+			</li>
+			<li class="tab-content">
+				<h2>Ember</h2>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis voluptatum qui exercitationem voluptatibus quasi quod alias labore natus, numquam repudiandae incidunt omnis illo enim. Cupiditate consequatur voluptatum incidunt molestias autem.</p>
+			</li>
+			<li class="tab-content">
+				<h2>Design</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente autem quos quasi id dolores, quaerat neque rerum? Quibusdam odit autem numquam repellat modi nobis fugit similique inventore, nulla ut esse?</p>
+			</li>
+		</ul>
 	</div>
-	<div class="buttons">
-		<button class="btn btn--success">GO TO NEXT APPROVAL</button>
-		<button class="btn btn--info">Info button</button>
-		<button class="btn btn--warning">OK</button>
-		<button class="btn btn--danger">TRY AGAIN</button>
-	</div>
-	<div class="buttons">
-		<button class="btn btn--success btn--lg">GO TO NEXT APPROVAL</button>
-		<button class="btn btn--info btn--lg">Info button</button>
-		<button class="btn btn--warning btn--lg">OK</button>
-		<button class="btn btn--danger btn--lg">TRY AGAIN</button>
-	</div>
-	
-	<div id="toasts"></div>
+
 
     <!-- bootstrap js and jquery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<!-- bootstrap js-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 	<!-- my js -->
-	<script src="main.js"></script>
+	<script type="module" src="main.js"></script>
 </body>
 </html>
